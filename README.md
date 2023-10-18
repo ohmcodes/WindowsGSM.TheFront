@@ -188,12 +188,12 @@ Adding Admin *ServerAdminAccounts*
 - Don't change *DedicatedServer* as Map
 
 Auto read from Fields
-Server Name == *ServerName*
-Server IP Address == *OutIPAddress*
-Server Port == *Port*
-Server Query Port == *QueryPort*
-Server Maxplayer == *MaxQueueSize*
-Server Maxplayer == *QueueThreshold*
+- Server Name == *ServerName*
+- Server IP Address == *OutIPAddress*
+- Server Port == *Port*
+- Server Query Port == *QueryPort*
+- Server Maxplayer == *MaxQueueSize*
+- Server Maxplayer == *QueueThreshold*
 
 # License
 This project is licensed under the MIT License - see the <a href="https://github.com/ohmcodes/WindowsGSM.TheFront/blob/main/LICENSE">LICENSE.md</a> file for details
