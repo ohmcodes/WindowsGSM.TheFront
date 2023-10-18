@@ -32,7 +32,8 @@
 - All Available Config 
 - ***<replaceme>*** replace this text with your desired config value
 - add this config on your .bat file and add (negative sign) for example -ServerPassword="changeme" (NOTE: this .cs doesnt need bat file)
-
+- Config guides [view](https://docs.google.com/spreadsheets/d/1Cea87x09rWuKjKuaqbMBSFdZjXigP5AkcVrT345RMfE/edit#gid=0)
+- 
 ```
 [BaseServerConfig]
 ServerName=<servername>
