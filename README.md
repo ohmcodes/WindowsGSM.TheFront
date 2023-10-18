@@ -157,7 +157,44 @@ GMDurabilityCostRatio=1
 GMVehiclePlayerDamageRatio=1
 GMVehicleConstructDamageRatio=1
 GMVehicleDamageRate=1
+ServerTags=1,2,3,4,5 
 ```
+
+NOTE:
+ServerTags=0,1,2,3,4 The label has nothing to do with the server parameters, so you have to choose the one you can use among these:
+
+```
+0= PVP 
+1= PVE
+2= EXP Multiplikator
+3= GatheringRate
+4= KeepInventory
+5= 45d wipe
+6= 15d wipe
+7= 30d wipe
+8= 60d wipe
+```
+
+
+Adding Admin *ServerAdminAccounts*
+- Edit Config and add parameters on the bottom
+```
+-ServerAdminAccounts=<SteamID64>
+```
+- How to get SteamID64 [Click Here](https://www.steamidfinder.com/)
+
+- Unfortunately *-UserDir* can't be overriden
+- Don't change *DedicatedServer* as Map
+
+Auto read from Fields
+Server Name == *ServerName*
+Server IP Address == *OutIPAddress*
+Server Port == *Port*
+Server Query Port == *QueryPort*
+Server Maxplayer == *MaxQueueSize*
+Server Maxplayer == *QueueThreshold*
+
+
 
 # License
 This project is licensed under the MIT License - see the <a href="https://github.com/ohmcodes/WindowsGSM.TheFront/blob/main/LICENSE">LICENSE.md</a> file for details
