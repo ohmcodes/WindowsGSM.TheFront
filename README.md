@@ -33,6 +33,8 @@
 - ***<replaceme>*** replace this text with your desired config value
 - add this config on your .bat file and add (negative sign) for example -ServerPassword="changeme" (NOTE: this .cs doesnt need bat file)
 - Config guides [view](https://docs.google.com/spreadsheets/d/1Cea87x09rWuKjKuaqbMBSFdZjXigP5AkcVrT345RMfE/edit#gid=0)
+- Make sure you install STEAM launcher (Install)[https://cdn.akamai.steamstatic.com/client/installer/SteamSetup.exe] or else you will have problem with SocketsSteamSockets
+- Make sure you don't overlap forwarded ports ex: 27015:27018 then another range 27010:27020 this is very wrong
 
 ```
 [BaseServerConfig]
