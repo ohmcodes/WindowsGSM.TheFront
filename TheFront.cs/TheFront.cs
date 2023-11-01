@@ -48,7 +48,7 @@ namespace WindowsGSM.Plugins
         public string Maxplayers = "100"; // WGSM reads this as string but originally it is number or int (MaxPlayers)
         public string Port = "27047"; // WGSM reads this as string but originally it is number or int
         public string QueryPort = "27048"; // WGSM reads this as string but originally it is number or int (SteamQueryPort)
-        public string Additional = $"-EnableParallelCharacterMovementTickFunction -EnableParallelCharacterTickFunction -UseDynamicPhysicsScene -fullcrashdumpalways -Game.PhysicsVehicle=false -ansimalloc -Game.MaxFrameRate=35 -QueueValidTime=120 -BeaconPort=\"27049\" -ShutDownServicePort=\"27050\" -ConfigServerName=\"{ConfigServerName}\"";
+        public string Additional = $"-EnableParallelCharacterMovementTickFunction -EnableParallelCharacterTickFunction -UseDynamicPhysicsScene -fullcrashdumpalways -Game.PhysicsVehicle=false -ansimalloc -Game.MaxFrameRate=35 -QueueValidTime=120 -BeaconPort=\"27049\" -ShutDownServicePort=\"27050\" -AccountsCacheNum=10240  -ConfigServerName=\"{ConfigServerName}\"";
 
         // - Create a default cfg for the game server after installation
         public async void CreateServerCFG()
@@ -70,6 +70,7 @@ namespace WindowsGSM.Plugins
 
             param += $" -OutIPAddress={_serverData.ServerIP}";
             param += $" -ServerName=\"{_serverData.ServerName}\"";
+            param += $" -SteamServerName=\"{_serverData.ServerName}\"";
             param += $" -Port=\"{_serverData.ServerPort}\"";
             param += $" -QueryPort=\"{_serverData.ServerQueryPort}\"";
             param += $" -MaxQueueSize={_serverData.ServerMaxPlayer}";
